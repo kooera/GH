@@ -12,11 +12,12 @@ namespace GitHub.Controllers
         [HttpPost]
         public string nuosoon()
         {
-            CmdHelper cmd = new CmdHelper();
+            CmdHelper cmd = new CmdHelper(@"F:\Code-Product\mkcommon\Log");
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append(@"cd C:\Code\Vli\Vli.sln");
+            stringBuilder.Append("F: &");
+            stringBuilder.Append(@"cd F:\Code-Product\mkcommon");
             stringBuilder.Append("\n");
-            stringBuilder.Append("dotnet build");
+            stringBuilder.Append("dotnet build MKCommon.sln ");
 
             cmd.Execute(stringBuilder.ToString());
 
@@ -26,11 +27,12 @@ namespace GitHub.Controllers
         [HttpGet]
         public string nuosoo()
         {
-            CmdHelper cmd = new CmdHelper();
+            CmdHelper cmd = new CmdHelper(@"F:\Code-Product\mkcommon\Log");
             StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append(@"cd C:\Code\Vli\Vli.sln");
+            stringBuilder.Append("F: &");
+            stringBuilder.Append(@"cd F:\Code-Product\mkcommon");
             stringBuilder.Append("\n");
-            stringBuilder.Append("dotnet build");
+            stringBuilder.Append("dotnet build MKCommon.sln ");
 
             cmd.Execute(stringBuilder.ToString());
 
